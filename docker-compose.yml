@@ -1,0 +1,16 @@
+services:
+  nexus-md:
+    build: .
+    container_name: ibk-nexus-md
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - nexus-auth:/app/auth
+      - nexus-data:/app/data
+    init: true
+
+volumes:
+  nexus-auth:
+  nexus-data:

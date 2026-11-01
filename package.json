@@ -1,0 +1,22 @@
+{
+  "name": "ibk-nexus-md",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A modular, safety-first WhatsApp multi-device assistant built with Baileys.",
+  "type": "module",
+  "engines": { "node": ">=20.0.0" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/config.js && node --check src/logger.js && node --check src/registry.js && node --check src/utils.js && node --check src/index.js && node --check src/socket.js && node --check src/handler.js && node --check src/db.js && node --check src/scheduler.js && node --check src/health.js && node --check src/plugins/core.js && node --check src/plugins/group.js && node --check src/plugins/moderation.js && node --check src/plugins/media.js && node --check src/plugins/ai.js && node --check src/plugins/games.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "6.7.24",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.33.5"
+  }
+}
