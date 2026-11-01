@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IBK Nexus MD
 
 A modular WhatsApp Multi-Device assistant built with Node.js and Baileys. It combines group administration, configurable protection, conversational AI, reminders, games, media tools, SQLite persistence, health monitoring, and a local plugin architecture.
@@ -320,3 +321,7 @@ The syntax check validates the project JavaScript files. Live pairing, message d
 ## License
 
 MIT. See [LICENSE](./LICENSE). Baileys and other dependencies remain under their respective licenses.
+=======
+# IBK-Nexus-MD
+A bot operator
+>>>>>>> fcecc2ee8e7752198821a14bca3019cf91963337
